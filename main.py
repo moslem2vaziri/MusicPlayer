@@ -212,7 +212,9 @@ async def skip_track(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["بیصدا", "mute"], config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command(["بیصدا", "mute"], config.PREFIXES)
+    & ~filters.private
+    & ~filters.edited
 )
 @register
 @language
