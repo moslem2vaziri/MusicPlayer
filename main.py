@@ -61,7 +61,7 @@ async def repo(_, message: Message):
 
 
 @client.on_message(
-    filters.command("ping", config.PREFIXES) & ~filters.bot & ~filters.edited
+    filters.command("پینگ", config.PREFIXES) & ~filters.bot & ~filters.edited
 )
 @handle_error
 async def ping(_, message: Message):
@@ -78,7 +78,7 @@ async def start(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command("help", config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command("راهنما", config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @language
 @handle_error
@@ -87,7 +87,7 @@ async def help(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["p", "play"], config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command(["p", "پخش"], config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @register
 @language
@@ -122,7 +122,7 @@ async def play_stream(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["radio", "stream"], config.PREFIXES)
+    filters.command(["radio", "رادیو"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -176,7 +176,7 @@ async def live_stream(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["skip", "next"], config.PREFIXES)
+    filters.command(["بعدی", "next"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -212,7 +212,7 @@ async def skip_track(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["m", "mute"], config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command(["بیصدا", "mute"], config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @register
 @language
@@ -229,7 +229,7 @@ async def mute_vc(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["um", "unmute"], config.PREFIXES)
+    filters.command(["باصدا", "unmute"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -248,7 +248,7 @@ async def unmute_vc(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["ps", "pause"], config.PREFIXES)
+    filters.command(["توقف", "pause"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -267,7 +267,7 @@ async def pause_vc(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["rs", "resume"], config.PREFIXES)
+    filters.command(["شروع", "resume"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -286,7 +286,7 @@ async def resume_vc(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["stop", "leave"], config.PREFIXES)
+    filters.command(["stop", "خروج"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -308,7 +308,7 @@ async def leave_vc(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["list", "queue"], config.PREFIXES)
+    filters.command(["list", "لیست"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -366,7 +366,7 @@ async def loop_stream(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["mode", "switch"], config.PREFIXES)
+    filters.command(["سویتچ", "switch"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -387,7 +387,7 @@ async def switch_mode(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["admins", "adminsonly"], config.PREFIXES)
+    filters.command(["admins", "ادمینها"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -408,7 +408,7 @@ async def admins_only(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["lang", "language"], config.PREFIXES)
+    filters.command(["lang", "زبان"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
@@ -572,7 +572,7 @@ async def import_playlist(_, message: Message, lang):
 
 
 @client.on_message(
-    filters.command(["update", "restart"], config.PREFIXES)
+    filters.command(["update", "اپدیت"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
